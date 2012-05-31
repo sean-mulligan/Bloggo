@@ -1,8 +1,9 @@
 package hello
 
 import (
-    "html/template"
+	 "fmt"
     "net/http"
+    "github.com/hoisie/mustache"
 )
 
 func init() {
@@ -10,14 +11,6 @@ func init() {
 }
 
 func root(w http.ResponseWriter, r *http.Request) {
-    t, err := template.New("index").ParseFiles("templates/index.html")
-    if err != nil {
-	http.Error(w, err.Error(), http.StatusInternalServerError)
-	return
-    }
-    err = t.ExecuteTemplate(w, "index.html", nil)
-    if err != nil {
-	http.Error(w, err.Error(), http.StatusInternalServerError)
-	return
-    }
+	out := mustache.RenderFileInLayout("mustache/index.html.mustache", "mustache/layout.html.mustache", nil)
+	fmt.Fprint(w, out)
 }
