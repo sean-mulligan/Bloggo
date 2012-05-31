@@ -1,0 +1,137 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+
+header, footer, aside, nav {
+	display: block;
+}
+
+body {
+	margin: 0 auto;
+	width: 940px;
+	font: 13px/22px Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 40px;
+	line-height: 50px;
+	margin-left: 20px;
+	margin-top: 20px;	
+}
+
+h2 {
+	font-size: 28px;
+	line-height: 44px;
+	padding: 22px 0;
+}
+
+p {
+	padding-bottom: 22px;
+}
+
+nav {
+	position: absolute;
+	left: 0;
+	width: 100%;
+}
+
+nav ul {  
+	list-style: none;
+	overflow: auto;
+   margin: 0 auto;  
+   width: 940px;
+} 
+
+nav ul li {  
+    float: left;  
+}  
+
+nav ul li a {  
+	  display: block;
+	  margin-left: 20px;  
+	  font-size: 14px;  
+	  line-height: 44px;  
+	  text-align: center;  
+	  text-decoration: none;  
+	  color: black;  
+}  
+  
+nav ul li a:hover {  
+	color: #777;  
+}  
+  
+nav ul li.selected a {  
+	color: #777;  
+}
+
+#content {  
+    display: table;  
+    margin-top: 44px;
+    margin-left: 20px;
+}  
+  
+#mainContent {  
+	display: table-cell;  
+	width: 620px;  
+	padding-right: 22px;  
+}  
+ 
+aside {  
+	display: table-cell;  
+	width: 300px;  
+}
+
+.blogPost div {  
+    /* Column-count not implemented yet */  
+    -moz-column-count: 2;  
+    -webkit-column-count: 2;  
+  
+    /* Column-gap not implemented yet */  
+    -moz-column-gap: 22px;  
+    -webkit-column-gap: 22px;  
+}  
