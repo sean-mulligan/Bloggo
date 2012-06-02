@@ -105,7 +105,7 @@ nav ul li a:hover {
 	color: #777;  
 }  
   
-nav ul li.selected a {  
+nav ul li a.selected {  
 	color: #777;  
 }
 
