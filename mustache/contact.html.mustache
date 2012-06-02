@@ -1,15 +1,31 @@
 <div id="mainContent">  
 	<section>  
 		<h2>CONTACT</h2>
-		{{submitted}}
-		<form method="post">
-			<p><label>Name: <input name="name"></label></p>
-			<p><label>Email: <input type=email name="email"></label></p>
-			<p><label>Information: <textarea name="info"></textarea></label></p>			
-			<p><button>SUBMIT</button></p>
+		<p>{{submitted}}</p>
+		<form id="contactForm" name="contactForm" method="post">
+			<ul>
+				<li><label>Name: </label><input name="name" type=text placeholder="First and last name" class="required"></li>
+				<li><label>Email: </label><input name="email" type=email placeholder="name@company.com" class="required"></li>
+				<li><label>Information: </label><textarea name="info" rows=10 class="required"></textarea></li>		
+				<button type=submit>SUBMIT</button>
+			</ul>
 		</form>
 	</section>  
 </div>  
 <aside>  
 	<!-- Sidebar -->  
 </aside> 
+<script>
+	$(document).ready(function() {
+		$("#contactForm").validate({
+			errorPlacement: function(error, element) {
+				offset = element.offset();
+				error.insertAfter(element);
+				error.addClass('errorMessage');
+				error.css('position', 'absolute');
+				error.css('left', offset.left + element.outerWidth());
+				error.css('top', offset.top);				
+			}		
+		});	
+	})
+</script>

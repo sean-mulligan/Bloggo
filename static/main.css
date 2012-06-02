@@ -134,4 +134,68 @@ aside {
     /* Column-gap not implemented yet */  
     -moz-column-gap: 22px;  
     -webkit-column-gap: 22px;  
-}  
+}
+
+/*
+	Form Elements
+*/
+form {
+
+}
+
+form ul li {
+	min-height: 30px;
+}
+
+form label {
+	float: left;
+	width: 100px;
+}
+
+form button {
+	background-color: white;
+	border-color: black;
+	border-style: solid;
+	border-width: thin;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	margin-left: 100px;
+	padding: 2px;
+	width: 206px;
+}
+
+form button:hover {
+	background-color: black;
+	cursor: pointer;
+	color: white;
+}
+
+form input {
+	border-color: black;
+	border-style: solid;
+	border-width: thin;
+	font: 13px/22px Helvetica, Arial, sans-serif;
+	padding: 2px;
+	width: 200px;	
+}
+
+form textarea {
+	border-color: black;
+	border-style: solid;
+	border-width: thin;
+	font: 13px/22px Helvetica, Arial, sans-serif;
+	padding: 2px;
+	width: 200px;	
+}
+
+.error {
+	background-color: #f5cece;
+}
+
+.errorMessage {
+	background-color: white;
+	padding-left: 10px;
+	min-width: 300px;
+}
