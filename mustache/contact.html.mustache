@@ -1,7 +1,13 @@
 <div id="mainContent">  
 	<section>  
 		<h2>CONTACT</h2>
-		<p>Please e-mail me at sean.mulligan.cs@gmail.com.</p> 
+		{{submitted}}
+		<form method="post">
+			<p><label>Name: <input name="name"></label></p>
+			<p><label>Email: <input type=email name="email"></label></p>
+			<p><label>Information: <textarea name="info"></textarea></label></p>			
+			<p><button>SUBMIT</button></p>
+		</form>
 	</section>  
 </div>  
 <aside>  

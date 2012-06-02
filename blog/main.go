@@ -3,6 +3,7 @@ package bloggo
 import (
 	 "fmt"
     "net/http"
+    "appengine"
     "github.com/hoisie/mustache"
 )
 
@@ -31,7 +32,15 @@ func resume(w http.ResponseWriter, r *http.Request) {
 }
 
 func contact(w http.ResponseWriter, r *http.Request) {
-	out := mustache.RenderFileInLayout("mustache/contact.html.mustache", "mustache/layout.html.mustache", nil)
+	var submitted string
+	if r.Method == "POST" {
+		c := appengine.NewContext(r)
+		addr := r.FormValue("email")
+		info := r.FormValue("info")
+		c.Infof("email %s, info %s", addr, info)
+		submitted = "Contact information submitted!"
+	}
+	out := mustache.RenderFileInLayout("mustache/contact.html.mustache", "mustache/layout.html.mustache", map[string]string{"submitted":submitted})
 	fmt.Fprint(w, out)
 }
 
