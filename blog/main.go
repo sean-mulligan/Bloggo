@@ -43,10 +43,11 @@ func contact(w http.ResponseWriter, r *http.Request) {
 			submitted = "Submission failed. Please enter all the information on the form. Thanks!"
 		} else {
 			msg := &mail.Message{
-				Sender:  fmt.Sprintf("%s (%s)", name, email),
-				To:      []string{"sean.mulligan.cs@gmail.com"},
-				Subject: fmt.Sprintf("Website Contact - %s", name),
-				Body:    info,
+				Sender:   "contact@sean-mulligan.appspotmail.com",
+				To:       []string{"sean.mulligan.cs@gmail.com"},
+				Subject:  fmt.Sprintf("Website Contact - %s", name),
+				Body:     fmt.Sprintf("Name: %s\nEmail: %s\nInformation: %s", name, email, info),
+				HTMLBody: fmt.Sprintf("<html><body><p>Name: %s</p><p>Email: %s</p><p>Information: %s</p></body></html>", name, email, info),
 			}
 			if err := mail.Send(c, msg); err != nil {
 				c.Errorf("Could not send email: %v", err)
