@@ -15,125 +15,124 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
+time, mark, audio, video {	
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	margin: 0;
+	padding: 0;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section {	
 	display: block;
 }
-body {
+body {	
 	line-height: 1;
 }
-ol, ul {
+ol, ul {	
 	list-style: none;
 }
-blockquote, q {
+blockquote, q {	
 	quotes: none;
 }
 blockquote:before, blockquote:after,
-q:before, q:after {
+q:before, q:after {	
 	content: '';
 	content: none;
 }
-table {
+table {	
 	border-collapse: collapse;
 	border-spacing: 0;
 } 
 
-header, footer, aside, nav {
+header, footer, aside, nav {	
 	display: block;
 }
 
-body {
+body {	
+	font: 13px/22px Helvetica, Arial, sans-serif;
 	margin: 0 auto;
 	width: 940px;
-	font: 13px/22px Helvetica, Arial, sans-serif;
 }
 
-h1 {
+h1 {	
 	font-size: 40px;
 	line-height: 50px;
 	margin-left: 20px;
-	margin-top: 20px;	
+	margin-top: 20px;
 }
 
-h2 {
+h2 {	
 	font-size: 32px;
 	line-height: 44px;
 	padding: 22px 0;
 }
 
-p {
+p {	
 	padding-bottom: 22px;
 }
 
-nav {
-	position: absolute;
+nav {	
 	left: 0;
+	position: absolute;
 	width: 100%;
 }
 
-nav ul {  
+nav ul {	
 	list-style: none;
+	margin: 0 auto;
 	overflow: auto;
-   margin: 0 auto;  
-   width: 940px;
+	width: 940px;
 } 
 
-nav ul li {  
-    float: left;  
+nav ul li {	
+	float: left;
 }  
 
-nav ul li a {  
-	  display: block;
-	  margin-left: 20px;  
-	  font-size: 14px;  
-	  line-height: 44px;  
-	  text-align: center;  
-	  text-decoration: none;  
-	  color: black;  
+nav ul li a {	
+	color: black;
+	display: block;
+	font-size: 14px;
+	line-height: 44px;
+	margin-left: 20px;
+	text-align: center;
+	text-decoration: none;
 }  
   
-nav ul li a:hover {  
-	color: #777;  
+nav ul li a:hover {	
+	color: #777;
 }  
   
-nav ul li a.selected {  
-	color: #777;  
+nav ul li a.selected {	
+	color: #777;
 }
 
-#content {  
-    display: table;  
-    margin-top: 44px;
-    margin-left: 20px;
+#content {	
+	display: table;
+	margin-left: 20px;
+	margin-top: 44px;
 }  
   
-#mainContent {  
-	display: table-cell;  
-	width: 620px;  
-	padding-right: 22px;  
+#mainContent {	
+	display: table-cell;
+	padding-right: 22px;
+	width: 620px;
 }  
  
-aside {  
-	display: table-cell;  
-	width: 300px;  
+aside {	
+	display: table-cell;
+	width: 300px;
 }
 
-.blogPost div {  
-    /* Column-count not implemented yet */  
-    -moz-column-count: 2;  
-    -webkit-column-count: 2;  
-  
-    /* Column-gap not implemented yet */  
-    -moz-column-gap: 22px;  
-    -webkit-column-gap: 22px;  
+.blogPost div {	
+	-webkit-column-count: 2;
+	-webkit-column-gap: 22px;
+	/* Column-count not implemented yet */  
+    -moz-column-count: 2;
+	/* Column-gap not implemented yet */  
+    -moz-column-gap: 22px;
 }
 
 /*
@@ -143,60 +142,60 @@ form {
 
 }
 
-form ul li {
+form ul li {	
 	min-height: 30px;
 }
 
-form label {
+form label {	
 	float: left;
 	width: 100px;
 }
 
-form button {
-	background-color: white;
-	border-color: black;
-	border-style: solid;
-	border-width: thin;
+form button {	
+	-khtml-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	-khtml-border-radius: 5px;
+	background-color: white;
+	border-color: black;
 	border-radius: 5px;
+	border-style: solid;
+	border-width: thin;
 	margin-left: 100px;
 	padding: 2px;
 	width: 206px;
 }
 
-form button:hover {
+form button:hover {	
 	background-color: black;
-	cursor: pointer;
 	color: white;
+	cursor: pointer;
 }
 
-form input {
+form input {	
 	border-color: black;
 	border-style: solid;
 	border-width: thin;
 	font: 13px/22px Helvetica, Arial, sans-serif;
 	padding: 2px;
-	width: 200px;	
+	width: 200px;
 }
 
-form textarea {
+form textarea {	
 	border-color: black;
 	border-style: solid;
 	border-width: thin;
 	font: 13px/22px Helvetica, Arial, sans-serif;
-	padding: 2px;
-	width: 200px;	
 	margin-bottom: 10px;
+	padding: 2px;
+	width: 200px;
 }
 
-.error {
+.error {	
 	background-color: #f5cece;
 }
 
-.errorMessage {
+.errorMessage {	
 	background-color: white;
-	padding-left: 10px;
 	min-width: 300px;
+	padding-left: 10px;
 }
