@@ -188,6 +188,7 @@ form textarea {
 	font: 13px/22px Helvetica, Arial, sans-serif;
 	padding: 2px;
 	width: 200px;	
+	margin-bottom: 10px;
 }
 
 .error {
